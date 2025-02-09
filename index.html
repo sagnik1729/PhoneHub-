@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneHub - Premium Device Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+                <span>PhoneHub</span>
+            </div>
+            <div class="nav-links">
+                <a href="#">Products</a>
+                <a href="#">Brands</a>
+                <a href="#">Support</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Discover Premium Devices</h1>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search iPhone, Samsung, Oppo...">
+                <button id="searchBtn">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="filters">
+            <h2>Featured Devices</h2>
+            <select id="deviceFilter">
+                <option value="all">All Devices</option>
+                <option value="phone">Phones</option>
+                <option value="tablet">Tablets</option>
+                <option value="watch">Watches</option>
+            </select>
+        </div>
+
+        <div id="phoneContainer" class="phone-grid"></div>
+
+        <div id="loadMoreContainer" class="load-more hidden">
+            <button id="showMore">Show More Devices</button>
+        </div>
+    </main>
+
+    <!-- Lightbox (Modal) -->
+    <div id="phoneModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Device Details</h3>
+                <button class="closeModal">&times;</button>
+            </div>
+            <div class="modal-body" id="modalContent">
+                <!-- Content will be dynamically inserted here -->
+            </div>
+            <div class="modal-footer">
+                <button class="closeModal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 PhoneHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
